@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feat OAuth Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="https://www.feat.com">
+        <img src="/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        Feat OAuth Example
+      </a>
+      <div>
+        <a href='https://github.com/feat/oauth_example'>
+          <i class="fa fa-github" aria-hidden="true"></i> Github
+        </a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class='py-md-3 px-md-5'>
+        <div class="jumbotron">
+          <h1 class="display-4">Feat Oauth 认证示例</h1>
+          <p class="lead">
+            这个示例展示如何通过 <code>OAuth2.0 Grant Type: Authorization Code</code> 的方式，访问feat.com的受限资源
+          </p>
+          <hr class="my-4">
+          <p>点击下方“认证授权”按钮，开始进入认证授权流程</p>
+          <a class="btn btn-primary" href="<%= login_url %>" role="button">认证授权</a>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>

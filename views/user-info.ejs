@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="https://www.feat.com">
+        <img
+          src="/logo.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+          loading="lazy"
+        />
+        Feat OAuth Example
+      </a>
+      <div>
+        <a href='https://github.com/feat/oauth_example'>
+          <i class="fa fa-github" aria-hidden="true"></i> Github
+        </a>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="py-md-3 px-md-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Feat Oauth 认证示例</h1>
+            <p class="lead">
+                这个示例中主要展示 authorization code 的 OAuth2.0 接入方式
+            </p>
+            <hr class="my-4">
+            <p>已成功获取用户Token，并通过token获取用户基本信息</p>
+            <div class='card'>
+                <div class='card-body'>
+                    <img
+                      src="<%= userInfo.avatar %>"
+                      style="width: 64px; height: 64px;"
+                      class="rounded-circle"
+                    />
+                    <h5 class="card-title"><%= userInfo.username %></h5>
+                    <p class="card-text">
+                      <%= userInfo.expertise %>
+                    </p>
+                    <a href="/profile" class="btn btn-primary">Detail</a>
+                    <a href="/reset" class="btn btn-danger">Reset</a>
+                  </div>
+                 
+            </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
