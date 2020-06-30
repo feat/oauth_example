@@ -14,7 +14,7 @@
 git clone https://github.com/feat/oauth_example
 ```
 
-2. 创建 `.env` ，并填入 `FEAT_CLIENT_ID` 与 `FEAT_CLIENT_SECRET`
+2. 创建 `.env` ，并填入 `FEAT_CLIENT_ID` 与 `FEAT_CLIENT_SECRET`。 `FEAT_CLIENT_ID`以及`FEAT_CLIENT_SECRET` 可以在 https://www.feat.com/application 中获取
 
 ```bash
 # 从模板中创建
